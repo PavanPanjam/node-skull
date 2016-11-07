@@ -11,7 +11,9 @@ var dotenv            = require('dotenv');  // https://www.npmjs.com/package/dot
 // Read in environment vars from .env file
 // In production I recommend setting the
 // environment vars directly
-dotenv.load();
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.load();
+}
 
 /**
  * Configuration File
