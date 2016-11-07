@@ -33,7 +33,7 @@
     "test": "mocha"
   },
   "engines": {
-    "node": "x.x.x"
+    "node": "6.x.x"
   },
   "dependencies": {
     "async": "^1.4.2",
